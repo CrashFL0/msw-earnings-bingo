@@ -446,11 +446,11 @@
 
   /* Fixed font sizes per grid size — never computed/measured at runtime,
      so the text can't shift size on resize, reload, or font swap. */
-  .board[data-size="3"]{ --cell-font:1.35rem; --free-font:1.4rem; }
-  .board[data-size="4"]{ --cell-font:1.15rem; --free-font:1.2rem; }
-  .board[data-size="5"]{ --cell-font:1rem; --free-font:1.05rem; }
-  .board[data-size="6"]{ --cell-font:.88rem; --free-font:.92rem; }
-  .board[data-size="7"]{ --cell-font:.78rem; --free-font:.82rem; }
+  .board[data-size="3"]{ --cell-font:1.35rem; --free-font:2.2rem; }
+  .board[data-size="4"]{ --cell-font:1.15rem; --free-font:1.9rem; }
+  .board[data-size="5"]{ --cell-font:1rem; --free-font:1.7rem; }
+  .board[data-size="6"]{ --cell-font:.88rem; --free-font:1.5rem; }
+  .board[data-size="7"]{ --cell-font:.78rem; --free-font:1.3rem; }
 
   .cell{
     position:relative;
@@ -1191,7 +1191,7 @@
     var wi = 0;
     for(var i = 0; i < size * size; i++){
       if(i === center){
-        board.push({ text: 'FREI', free: true });
+        board.push({ text: '🚀', free: true });
       } else {
         board.push({ text: picked[wi++], free: false });
       }
